@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+  <script src="https://cdn.plot.ly/plotly-locale-ru-latest.js"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Task for Titan</title>
 </head>
 <body>
   <div id="extraction"></div>
+  <div id="extraction-controls">
+    <input id="date-input" type="date" pattern="\d{4}-\d{2}-\d{2}" />
+    <button id="date-btn">Выберите период</button>
+    <p id="date-text"></p>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
