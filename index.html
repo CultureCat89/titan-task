@@ -9,12 +9,33 @@
   <title>Task for Titan</title>
 </head>
 <body>
-  <div id="extraction"></div>
-  <div id="extraction-controls">
-    <input id="date-input" type="date" pattern="\d{4}-\d{2}-\d{2}" />
-    <button id="date-btn">Выберите период</button>
-    <p id="date-text"></p>
+  <div class="wrapper">
+    <div id="extraction"></div>
+    
+    <div class="extraction-controls">
+      <div>
+        <button id="clear-data" class="btn">Очистить график</button>
+        <button id="test-case" class="btn">Запустить тест-данные</button>
+      </div>
+      <div>
+        <div class="input-date-wrapper">
+          <p id="date-text"></p>
+          <input id="date-input" type="date" pattern="\d{4}-\d{2}-\d{2}" />
+          <button id="date-btn" class="btn">Выберите период</button>
+        </div>
+        <div class="input-plan-wrapper">
+          <p id="date-text"></p>
+          <input id="update-plan-input" type="number" />
+          <button id="update-plan-btn" class="btn">Установить план</button>
+        </div>
+        <div class="input-volume-wrapper">
+          <input id="update-volume-time" type="time" />
+          <input id="update-volume-number" type="number" />
+          <button id="update-volume-btn" class="btn">Установить точку</button>
+        </div>
+      </div>
+    </div>
   </div>
-  <script src="main.js"></script>
+  <script defer src="main.js"></script>
 </body>
 </html>
